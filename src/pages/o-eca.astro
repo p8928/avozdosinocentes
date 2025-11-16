@@ -87,27 +87,44 @@ import Navigation from "../components/Navigation.astro";
   <!-- Updates and Improvements -->
   <section class="py-20 px-8 bg-black/95">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-[#d90e46] mb-12 uppercase text-center scroll-animate dramatic-title">Atualizações e Aprimoramentos</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-[#d90e46] mb-12 uppercase text-center scroll-animate dramatic-title">Atualizações e aprimoramentos</h2>
+      <p class="text-white text-lg leading-relaxed mb-8 scroll-animate complementary-paragraph">
+        Desde sua promulgação, o estatuto passou por diversas atualizações para se manter como uma legislação avançada e atualizada. Entre os aprimoramentos mais recentes, destacam-se:
+      </p>
       <ul class="space-y-6">
         <li class="flex items-start scroll-animate complementary-paragraph">
           <span class="text-[#d90e46] text-2xl mr-4 mt-1">›</span>
           <div>
-            <h3 class="text-white text-xl font-bold">Lei da Primeira Infância</h3>
-            <p class="text-gray-300 text-lg">Estabelece políticas para crianças de zero a seis anos.</p>
+            <h3 class="text-white text-xl font-bold">Lei da Primeira Infância (Lei nº 13.257/2016)</h3>
+            <p class="text-gray-300 text-lg">Estabelece políticas públicas específicas para crianças de zero a seis anos, reconhecendo a importância dos primeiros anos de vida no desenvolvimento integral do ser humano. A lei implica o dever do Estado de estabelecer políticas, planos, programas e serviços que atendam às especificidades dessa faixa etária, com ações articuladas nas áreas de educação, saúde, assistência social, cultura e proteção.</p>
           </div>
         </li>
         <li class="flex items-start scroll-animate complementary-paragraph" style="--animation-delay: 0.2s;">
           <span class="text-[#d90e46] text-2xl mr-4 mt-1">›</span>
           <div>
-            <h3 class="text-white text-xl font-bold">Lei Menino Bernardo</h3>
-            <p class="text-gray-300 text-lg">Proíbe o uso de castigos físicos na educação de crianças e adolescentes.</p>
+            <h3 class="text-white text-xl font-bold">Lei Menino Bernardo (Lei nº 13.010/2014)</h3>
+            <p class="text-gray-300 text-lg">Estabelece o direito da criança e do adolescente de serem educados e cuidados sem o uso de castigos físicos ou tratamento cruel ou degradante. A lei proíbe qualquer forma de correção que utilize força física ou cause sofrimento, humilhação ou intimidação, promovendo formas não violentas de educação e a cultura de proteção à infância.</p>
           </div>
         </li>
         <li class="flex items-start scroll-animate complementary-paragraph" style="--animation-delay: 0.4s;">
           <span class="text-[#d90e46] text-2xl mr-4 mt-1">›</span>
           <div>
-            <h3 class="text-white text-xl font-bold">Lei da Escuta Especializada</h3>
-            <p class="text-gray-300 text-lg">Garante um sistema de direitos para crianças e adolescentes vítimas ou testemunhas de violência.</p>
+            <h3 class="text-white text-xl font-bold">Lei da Escuta Especializada (Lei nº 13.431/2017)</h3>
+            <p class="text-gray-300 text-lg">Estabelece o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência, criando mecanismos para prevenir e coibir a violência. A lei institui procedimentos de escuta especializada e depoimento especial, realizados de forma adequada à idade e ao desenvolvimento da criança, evitando a revitimização durante o processo de apuração.</p>
+          </div>
+        </li>
+        <li class="flex items-start scroll-animate complementary-paragraph" style="--animation-delay: 0.6s;">
+          <span class="text-[#d90e46] text-2xl mr-4 mt-1">›</span>
+          <div>
+            <h3 class="text-white text-xl font-bold">ECA Digital (Lei nº 15.211/2025)</h3>
+            <p class="text-gray-300 text-lg">Moderniza a proteção para o ambiente online, criando obrigações para empresas de tecnologia como a verificação de idade, ferramentas de supervisão familiar e respostas rápidas a conteúdos ilegais. A lei visa prevenir a exposição de crianças e adolescentes a riscos digitais, como pornografia, bullying e exploração, estabelecendo mecanismos de proteção e responsabilização no ambiente digital.</p>
+          </div>
+        </li>
+        <li class="flex items-start scroll-animate complementary-paragraph" style="--animation-delay: 0.8s;">
+          <span class="text-[#d90e46] text-2xl mr-4 mt-1">›</span>
+          <div>
+            <h3 class="text-white text-xl font-bold">Direitos da criança e mudanças climáticas</h3>
+            <p class="text-gray-300 text-lg">O Brasil reconheceu, pela primeira vez, a relação entre os direitos da criança e as mudanças climáticas em sua política ambiental, compreendendo que as alterações no clima impactam desproporcionalmente crianças e adolescentes, e que a proteção do meio ambiente é fundamental para garantir seus direitos ao desenvolvimento saudável e a um futuro digno.</p>
           </div>
         </li>
       </ul>
@@ -161,19 +178,19 @@ import Navigation from "../components/Navigation.astro";
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.scroll-animate');
+  document.addEventListener("DOMContentLoaded", () => {
+    const animatedElements = document.querySelectorAll(".scroll-animate");
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
+          entry.target.classList.add("in-view");
         }
       });
     }, {
-      threshold: 0.1
+      threshold: 0.1,
     });
 
-    animatedElements.forEach(element => {
+    animatedElements.forEach((element) => {
       observer.observe(element);
     });
   });
