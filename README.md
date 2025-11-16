@@ -1,3 +1,4 @@
+<HEAD
 # Astro Starter Kit: Basics
 
 ```sh
@@ -58,3 +59,8 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+=======
+# A Voz dos Inocentes
+
+Projeto que surgiu de atividade universitária, dedicado à divulgação de informações sobre ECA e Conselho Tutelar com propósito único de promover conscientização. A manutenção do site por mais de 12 meses é inerente à captação de recursos para os custos de renovação de domínio.
+> e7fc9545f969c90c70ff2b7d10010446b236d38a
