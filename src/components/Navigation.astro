@@ -17,9 +17,9 @@
       <li><a href="#" class="text-white text-sm font-medium hover:text-white transition-colors duration-300 px-3 py-2 rounded-lg hover:bg-white/10">Conselho Tutelar</a></li>
       <li><a href="#" class="text-white text-sm font-medium hover:text-white transition-colors duration-300 px-3 py-2 rounded-lg hover:bg-white/10">Dúvidas frequentes</a></li>
     </ul>
-    <button class="cta-button px-4 py-1.5 rounded-lg text-white font-semibold text-sm bg-[#d90e46] hover:bg-[#b00c3a] transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
+    <a href="https://www.google.com/search?q=Conselho+Tutelar+perto+de+mim" target="_blank" class="cta-button px-4 py-1.5 rounded-lg text-white font-semibold text-sm bg-[#d90e46] hover:bg-[#b00c3a] transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
       Denunciar
-    </button>
+    </a>
   </div>
 
   <!-- Mobile Menu Button -->
@@ -43,29 +43,29 @@
       <li><a href="#" class="text-white text-2xl font-bold hover:underline transition-all duration-300">Conselho Tutelar</a></li>
       <li><a href="#" class="text-white text-2xl font-bold hover:underline transition-all duration-300">Dúvidas comuns</a></li>
     </ul>
-    <button class="mt-12 px-8 py-3 rounded-lg text-white font-bold text-xl bg-black/20 hover:bg-black/40 transition-all duration-300">
+    <a href="https://www.google.com/search?q=Conselho+Tutelar+perto+de+mim" target="_blank" class="mt-12 px-8 py-3 rounded-lg text-white font-bold text-xl bg-black/20 hover:bg-black/40 transition-all duration-300">
       Denunciar
-    </button>
+    </a>
   </div>
 </nav>
 
 <script>
-  const menuBtn = document.getElementById('menu-btn');
-  const closeBtn = document.getElementById('close-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
+  const menuBtn = document.getElementById("menu-btn");
+  const closeBtn = document.getElementById("close-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.remove('hidden');
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
   });
 
-  closeBtn.addEventListener('click', () => {
-    mobileMenu.classList.add('hidden');
+  closeBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
   });
 
   // Optional: Close menu when a link is clicked
-  mobileMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
     });
   });
 </script>
