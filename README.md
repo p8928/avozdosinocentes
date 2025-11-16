@@ -64,3 +64,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 Projeto que surgiu de atividade universitária, dedicado à divulgação de informações sobre ECA e Conselho Tutelar com propósito único de promover conscientização. A manutenção do site por mais de 12 meses é inerente à captação de recursos para os custos de renovação de domínio.
 > e7fc9545f969c90c70ff2b7d10010446b236d38a
+Atualização para acionar o workflow do GitHub Actions
