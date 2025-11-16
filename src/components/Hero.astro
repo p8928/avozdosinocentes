@@ -1,0 +1,21 @@
+---
+// Hero section component with overlay only
+---
+
+<div class="hero-section w-full relative">
+  <!-- Overlay para melhor contraste do texto -->
+  <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent w-full h-full"></div>
+  
+  <!-- Conteúdo posicionado -->
+  <div class="relative z-10 h-screen flex items-center">
+    <div class="ml-16 max-w-4xl">
+      <slot />
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero-section {
+    height: 100vh; /* Full viewport height */
+  }
+</style>
