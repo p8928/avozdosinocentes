@@ -1,0 +1,262 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Navigation from "../components/Navigation.astro";
+---
+
+<Layout>
+  <Navigation />
+  <Hero>
+    <div class="text-center pt-20">
+      <h1 class="font-black leading-tight">
+        <div class="text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] 2xl:text-[11rem] whitespace-nowrap bg-gradient-to-b from-[#d90e46] via-[#b00c3a] to-[#870d2d] bg-clip-text text-transparent font-black" style="line-height: 1.24;">
+          QUEBRE O<br>
+          <span class="mt-[-0.5em] bg-[#a5b4c3] text-[#161a21] px-2 rounded" style="background-color: rgba(165, 180, 195, 0.88); color: rgb(22, 26, 33);">SILÊNCIO</span>
+        </div>
+      </h1>
+    </div>
+  </Hero>
+  
+  <!-- Seção com parágrafo e botões -->
+  <section class="min-h-screen py-12 px-8 flex items-center bg-black/70">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-white text-2xl md:text-3xl font-medium mb-12 leading-relaxed">
+        O silêncio de uma criança pode revelar abusos, e você tem poder para denunciá-los. Dê voz a quem sofre silenciosamente.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button class="px-8 py-4 rounded-lg font-bold text-lg bg-[#d90e46] hover:bg-[#b00c3a] text-white transition-all duration-300 shadow-md hover:shadow-lg">
+          Descubra sinais comuns de abuso infantil
+        </button>
+        <button class="px-8 py-4 rounded-lg font-bold text-lg border-2 border-[#d90e46] text-[#d90e46] hover:bg-[#d90e46] hover:text-white transition-all duration-300">
+          Conheça o ECA
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Seção com estatística -->
+  <section class="min-h-screen py-12 px-8 flex items-center bg-black">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#d90e46] leading-tight mb-16">
+        As denúncias de abuso e exploração sexual contra crianças e adolescentes aumentaram <span class="font-black text-white">195%</span> entre <span class="font-black text-white">2020 (6.380)</span> e <span class="font-black text-white">2024 (18.826)</span> — 
+        <a href="https://g1.globo.com/politica/noticia/2025/05/18/denuncias-de-abuso-e-exploracao-sexual-infantil-crescem-195percent-nos-ultimos-4-anos.ghtml" 
+           target="_blank" 
+           class="underline hover:text-[#b00c3a] transition-colors">
+          G1
+        </a>
+      </p>
+      <p class="text-xl md:text-2xl text-white font-medium max-w-4xl mx-auto">
+        De acordo com o Atlas da Violência 2025, são mais de 115 mil vítimas por ano. O aumento nas denúncias é um alento, mas representa aproximadamente 16% de todas as ocorrências anuais no Brasil.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Seção com infográfico -->
+  <section class="min-h-screen py-12 px-8 flex items-center bg-black/90">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#d90e46] mb-12 uppercase">A realidade das vítimas</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div class="bg-black/50 p-6 rounded-lg">
+          <div class="text-5xl font-black text-white mb-4">95,4%</div>
+          <p class="text-white text-lg uppercase">dos criminosos são homens</p>
+        </div>
+        
+        <div class="bg-black/50 p-6 rounded-lg">
+          <div class="text-5xl font-black text-white mb-4">8 em 10</div>
+          <p class="text-white text-lg uppercase">casos envolvem algo conhecido da família</p>
+        </div>
+        
+        <div class="bg-black/50 p-6 rounded-lg">
+          <div class="text-5xl font-black text-white mb-4">40,8%</div>
+          <p class="text-white text-lg uppercase">eram pais ou padrastos em 2022</p>
+        </div>
+      </div>
+      
+      <!-- Linha decorativa animada com progressão -->
+      <div class="relative mb-12">
+        <div class="h-1 bg-gradient-to-r from-[#d90e46] to-[#d90e46]/30 rounded-full overflow-hidden">
+          <div class="h-full bg-[#d90e46] animate-progress w-1/4"></div>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-black/50 p-6 rounded-lg">
+          <div class="text-5xl font-black text-white mb-4">37,2%</div>
+          <p class="text-white text-lg uppercase">eram irmãos, primos ou outro parente em 2022</p>
+        </div>
+        
+        <div class="bg-black/50 p-6 rounded-lg">
+          <div class="text-5xl font-black text-white mb-4">8,7%</div>
+          <p class="text-white text-lg uppercase">eram avós em 2022</p>
+        </div>
+      </div>
+      
+      <p class="text-sm text-gray-400 uppercase mt-8">
+        Fonte: 
+        <a href="https://forumseguranca.org.br/wp-content/uploads/2022/07/14-anuario-2022-violencia-sexual-infantil-os-dados-estao-aqui-para-quem-quiser-ver.pdf" 
+           target="_blank" 
+           class="text-[#d90e46] hover:text-[#b00c3a] transition-colors">
+          Anuário Brasileiro de Segurança Pública 2022
+        </a>
+      </p>
+    </div>
+  </section>
+  
+  <!-- Seção com parágrafo complementar -->
+  <section class="min-h-screen py-12 px-8 flex items-center bg-black/70">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-white text-xl md:text-2xl leading-relaxed mb-8">
+        As estatísticas revelam a assustadora realidade das vítimas: a maioria corre riscos de abuso e violência dentro de casa, onde deveriam se sentir mais protegidas, e sofrem nas mãos de quem deveria protegê-las. "Depressão, automutilação, isolamento, mudança no rendimento escolar, medo em relação a uma pessoa ou mesmo comportamento agressivo ou raivoso podem ser considerados sinais de que a criança ou adolescente esteja passando por violência ou abuso sexual" — Ministério dos Direitos Humanos e da Cidadnia.
+      </p>
+      
+      <!-- Botão simples -->
+      <a href="tel:100" class="px-8 py-4 rounded-lg font-bold text-lg bg-[#d90e46] text-white transition-all duration-300 shadow-md hover:bg-[#b00c3a] hover:shadow-lg inline-block">
+        Disque 100 — Serviço disponível 24h por dia
+      </a>
+    </div>
+  </section>
+  
+  <!-- Seção com título sobre internet -->
+  <section class="min-h-screen py-12 px-8 flex items-center" style="background: linear-gradient(135deg, #d90e46, #b00c3a, #870a2d);">
+    <div class="max-w-6xl mx-auto text-center">
+      <h1 class="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-black leading-tight">
+        Internet: um espaço cada vez mais perigoso para crianças
+      </h1>
+    </div>
+  </section>
+  
+  <!-- Nova seção com estatística da ONU -->
+  <section class="min-h-screen py-12 px-8 flex items-center bg-black">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#d90e46] leading-tight">
+        300 milhões de crianças sofreram exploração sexual e abuso infantil online — 
+        <a href="https://news.un.org/pt/story/2024/10/1839006" 
+           target="_blank" 
+           class="underline hover:text-[#b00c3a] transition-colors">
+          ONU News
+        </a>
+      </p>
+    </div>
+  </section>
+  
+  <!-- Seção com texto sobre riscos online ocupando 100vh -->
+  <section class="h-screen py-12 px-8 flex items-center bg-black">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="text-2xl md:text-3xl lg:text-4xl font-bold text-white uppercase leading-relaxed">
+        Pedofilia. Adultização. Conteúdo explícito. Prostituição. Um simples celular pode expor crianças esses riscos, mesmo quando usado para atividades consideradas inocentes e apropriadas, como jogos e vídeos.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Seção com imagem e quote ocupando 100vh -->
+  <section class="h-screen py-12 px-8 flex items-center bg-black">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-1 text-left">
+          <img src="/img/ted_cyber.png" alt="TED Cyber" class="max-w-full h-auto object-contain animated-img" style="max-height: 85vh; width: auto;" />
+        </div>
+        
+        <div class="flex-1 text-left">
+          <blockquote class="text-xl md:text-2xl text-white font-medium border-l-4 border-[#d90e46] pl-6 italic mb-4">
+            O fato é que crianças e jovens estão cada vez mais conectados pelas mídias sociais, o que representa um risco em potencial. Se sabemos que a conexão pela internet é uma realidade que está e tende a estar cada vez mais presente, então, precisamos falar com as crianças e os adolescentes sobre os perigos e riscos.
+          </blockquote>
+          
+          <p class="text-sm text-gray-400 capitalize text-center">
+            Fonte: Fórum brasileiro de segurança pública
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Nova seção editorial estilo revista -->
+  <section class="min-h-screen py-12 px-8 flex items-center bg-black/80">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="text-white text-xl md:text-2xl leading-relaxed">
+        Às vezes, o famoso "joguinho de celular" expõe crianças a anúncios que apresentam conteúdo adulto ou, no mínimo, inadequado para elas. A autonomia dada a elas para navegar irrestritamente por aplicativos de streaming e redes sociais também representa um sério risco, uma vez que os algoritmos estão sujeitos a recomendar conteúdo inapropriado. Mais grave do que a negligência quanto à supervisão é a própria permissão para a criança gravar e publicar seus próprios conteúdos em vídeo, possibilitando a sua interação com terceiros, que podem baixar e distribuir o conteúdo para fins diversos.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Seção infográfico com sinais de alerta -->
+  <section class="min-h-screen py-12 px-8 flex items-center bg-black/90">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#d90e46] mb-12 uppercase">Atenção aos sinais de alerta</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-black/50 p-6 rounded-lg">
+          <div class="text-5xl font-black text-white mb-4">Isolamento social</div>
+          <p class="text-white text-lg">Criança se isola do convívio familiar e social</p>
+        </div>
+        
+        <div class="bg-black/50 p-6 rounded-lg">
+          <div class="text-5xl font-black text-white mb-4">Irritabilidade</div>
+          <p class="text-white text-lg">Comportamento mais agressivo ou nervoso</p>
+        </div>
+        
+        <div class="bg-black/50 p-6 rounded-lg">
+          <div class="text-5xl font-black text-white mb-4">Desinteresse</div>
+          <p class="text-white text-lg">Falta de interesse por atividades offline</p>
+        </div>
+      </div>
+      
+      <div class="mt-12">
+        <p class="text-xl md:text-2xl text-white font-medium max-w-4xl mx-auto">
+          Será que você sabe o que seu filho tem feito na internet? Estes sinais podem evidenciar o mau uso da tecnologia, que é a porta de entrada para problemas relacionados a abuso e exploração infantil.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Nova seção editorial sobre como denunciar crimes na internet -->
+  <section class="min-h-screen py-12 px-8 flex items-center bg-black">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold text-[#d90e46] mb-12 uppercase">como denunciar crimes que acontecem na internet</h2>
+      
+      <div class="space-y-12">
+        <div class="text-left">
+          <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">Conteúdo público</h3>
+          <p class="text-white text-xl leading-relaxed mb-4">
+            Situações de contato com conteúdo público na internet envolvendo imagens ou vídeos de crianças ou adolescentes em situações ou insinuações de conotação sexual e nudez, incluindo deep fake gerado via inteligência artificial.
+          </p>
+          <div class="text-left">
+            <p class="text-white text-lg mb-2"><span class="text-[#d90e46] font-bold">Safernet Brasil:</span> denuncie.org.br</p>
+            <p class="text-white text-lg"><span class="text-[#d90e46] font-bold">Take It Down (takeitdown.ncmec.org):</span> para retirar conteúdo do ar automaticamente e assim impedir sua propagação.</p>
+          </div>
+        </div>
+        
+        <div class="text-left">
+          <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">Conteúdo privado</h3>
+          <p class="text-white text-xl leading-relaxed mb-4">
+            Quando se trata de conteúdo privado compartilhado em aplicativos de mensagem, fóruns, email, entre outros canais online não públicos.
+          </p>
+          <div class="text-left">
+            <p class="text-white text-lg mb-2"><span class="text-[#d90e46] font-bold">Disque 100:</span> disponível 24 horas por dia.</p>
+            <p class="text-white text-lg mb-2"><span class="text-[#d90e46] font-bold">Polícia Civil:</span> acione a delegacia local.</p>
+            <p class="text-white text-lg mb-2"><span class="text-[#d90e46] font-bold">Ministério Público:</span> consulte atendimento no seu estado.</p>
+            <p class="text-white text-lg mb-2"><span class="text-[#d90e46] font-bold">Polícia Federal:</span> para casos de abrangência nacional</p>
+          </div>
+        </div>
+        
+        <div class="text-left">
+          <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">Abuso ou violência sexual consumada</h3>
+          <p class="text-white text-xl leading-relaxed">
+            Gravação, divulgação, ameaça de divulgação e extorsão, mesmo que se trate de conteúdo gerado por inteligência artificial. Necessário recorrer à denúncia formal em uma delegacia, de preferência especializada, ou solicitar assistência do Conselho Tutelar do seu município.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Nova seção com título sobre crimes contra crianças -->
+     <section class="h-screen py-12 px-8 flex items-center bg-black">
+       <div class="max-w-6xl mx-auto text-center">
+         <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight animate-dramatic-pulse">
+           Presenciou algum crime contra criança ou adolescente? Chame o Conselho Tutelar do seu município.
+    <style>
+      @keyframes dramatic-pulse {
+        0% {
+          opacity: 0.3;
+          transform: scale(0.95);
+          text-shadow: 0 0 5px rgba(217, 14, 70, 0.3);
+        }

@@ -1,0 +1,48 @@
+/* Import the Outfit font from local files */
+@import url('/fonts/outfit-v14-latin/style.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply Outfit font globally */
+:root {
+  font-family: 'Outfit', system-ui, sans-serif;
+}
+
+body {
+  font-family: 'Outfit', system-ui, sans-serif;
+  background: linear-gradient(135deg, #171718, #0d0d0d);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url('/img/non_explicit_cover_compressed.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Estilo da scrollbar otimizado */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #d90e46, #870a2d);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #b00c3a, #870a2d);
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d90e46 #0d0d0d;
+}
