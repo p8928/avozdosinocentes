@@ -3,7 +3,10 @@ import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
 ---
 
-<Layout>
+<Layout set:html={true}>
+  <head>
+    <meta name="description" content="Entenda o Estatuto da Criança e do Adolescente (ECA): Princípios, direitos assegurados e atualizações importantes como a Lei da Primeira Infância, Lei Menino Bernardo e ECA Digital." />
+  </head>
   <Navigation />
 
   <!-- Hero Section -->

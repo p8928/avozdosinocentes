@@ -4,7 +4,10 @@ import Hero from "../components/Hero.astro";
 import Navigation from "../components/Navigation.astro";
 ---
 
-<Layout>
+<Layout set:html={true}>
+  <head>
+    <meta name="description" content="A Voz dos Inocentes: Plataforma de apoio e informação sobre os direitos da criança e do adolescente. Descubra sinais de abuso, como denunciar e o papel do Conselho Tutelar." />
+  </head>
   <Navigation />
   <Hero>
     <div class="text-center pt-20">

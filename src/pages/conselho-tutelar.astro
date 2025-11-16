@@ -3,7 +3,10 @@ import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
 ---
 
-<Layout>
+<Layout set:html={true}>
+  <head>
+    <meta name="description" content="Tudo sobre o Conselho Tutelar: Funções, como funciona, como acionar e sua importância na proteção dos direitos das crianças e adolescentes." />
+  </head>
   <Navigation />
 
   <!-- Hero Section -->
